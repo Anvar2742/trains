@@ -1,8 +1,16 @@
+:root {
+    --primary-color: #0f0f66;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
+}
+
+body {
+    background: #f8ebff;
 }
 
 .container {
@@ -13,7 +21,7 @@
 
 header {
     height: 60px;
-    background: #0f0f66;
+    background: var(--primary-color);
 }
 
 header .container {
@@ -42,4 +50,41 @@ nav a:hover {
 .logo img {
     width: 30px;
     height: 30px;
+}
+
+.hero {
+    padding: 150px 0;
+}
+
+.hero .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    font-size: 48px;
+}
+
+.hero p {
+    margin: 10px 0;
+}
+
+.hero button {
+    background: var(--primary-color);
+    color: #fff;
+    padding: 5px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.hero .col {
+    width: 50%;
+}
+
+.hero img {
+    width: 100%;
+    border-radius: 20px;
 }
