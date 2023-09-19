@@ -36,7 +36,7 @@
                     <div class="col">
                         <h1>Les trains du monde</h1>
                         <p>Parlons des trains</p>
-                        <button class="btn">Quiz</button>
+                        <a href="#quiz" class="btn">Quiz</a>
                     </div>
                     <div class="col">
                         <img src="./img/trains.jpg" alt="Train SNCF" />
@@ -45,28 +45,32 @@
             </section>
             <section class="history">
                 <div class="container">
-                    <h2>La premiere train du monde</h2>
-                    <p>
-                        La locomotive à vapeur est inventée en 1804 par Richard
-                        Trevithick au Royaume-Uni. La traction à la vapeur reste
-                        le type de traction le plus couramment utilisé, de la
-                        naissance du chemin de fer jusque dans les années 1950.
-                        ​
-                    </p>
-                    <figure>
-                        <img
-                            src="./img/first.jpg"
-                            alt="La locomotive à vapeur"
-                        />
-                        <figcaption>La locomotive à vapeur</figcaption>
-                    </figure>
+                    <div class="col">
+                        <h2>La premiere train du monde</h2>
+                        <p>
+                            La locomotive à vapeur est inventée en 1804 par
+                            Richard Trevithick au Royaume-Uni. La traction à la
+                            vapeur reste le type de traction le plus couramment
+                            utilisé, de la naissance du chemin de fer jusque
+                            dans les années 1950. ​
+                        </p>
+                    </div>
+                    <div class="col">
+                        <figure>
+                            <img
+                                src="./img/first.jpg"
+                                alt="La locomotive à vapeur"
+                            />
+                            <figcaption>La locomotive à vapeur</figcaption>
+                        </figure>
+                    </div>
                 </div>
             </section>
-            <section class="quiz">
+            <section class="quiz" id="quiz">
                 <div class="container">
                     <h2>Quiz!</h2>
                     <p>Testez vos connaissances sur les trains</p>
-                    <form action="#" class="quiz__form">
+                    <form class="quiz__form">
                         <div>
                             <label for="prenom">Prenom</label>
                             <input
@@ -101,6 +105,7 @@
                                             type="radio"
                                             name="fastest"
                                             id="japan"
+                                            value="Japon"
                                             required
                                         />
                                     </div>
@@ -110,6 +115,7 @@
                                             type="radio"
                                             name="fastest"
                                             id="france"
+                                            value="France"
                                             required
                                         />
                                     </div>
@@ -119,6 +125,7 @@
                                             type="radio"
                                             name="fastest"
                                             id="china"
+                                            value="Chine"
                                             required
                                         />
                                     </div>
@@ -130,6 +137,7 @@
                                             type="radio"
                                             name="fastest"
                                             id="south corea"
+                                            value="Corée du Sud"
                                             required
                                         />
                                     </div>
@@ -214,4 +222,5 @@
             </footer>
         </main>
     </body>
+    <script src="./main.js" type="module"></script>
 </html>

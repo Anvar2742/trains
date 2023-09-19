@@ -13,6 +13,10 @@ body {
     background: #f8ebff;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .container {
     max-width: 1140px;
     padding: 0 15px;
@@ -78,13 +82,14 @@ h1 {
     border-radius: 20px;
     cursor: pointer;
     font-weight: 600;
+    text-decoration: none;
 }
 
 .hero .col {
     width: 50%;
 }
 
-.hero img {
+section img {
     width: 100%;
     border-radius: 20px;
 }
@@ -146,4 +151,16 @@ footer {
 
 .history p {
     margin: 15px 0;
+}
+
+.history .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+figcaption {
+    text-align: center;
+    margin-top: 10px;
 }
