@@ -139,3 +139,11 @@ footer {
     padding: 15px 0;
     color: #fff;
 }
+
+.history figure img {
+    width: 100%;
+}
+
+.history p {
+    margin: 15px 0;
+}
