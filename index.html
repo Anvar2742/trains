@@ -4,13 +4,13 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Trains</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="style.css" />
     </head>
     <body>
         <header>
             <div class="container">
                 <a href="/" class="logo">
-                    <img src="./img/train-svgrepo-com.svg" alt="Trains Logo">
+                    <img src="./img/train-svgrepo-com.svg" alt="Trains Logo" />
                 </a>
                 <nav>
                     <ul>
@@ -34,26 +34,129 @@
             <section class="hero">
                 <div class="container">
                     <div class="col">
-                        <h1>Trains are cool!</h1>
-                        <p>And they get cooler every day.</p>
-                        <button>Pass a quiz</button>
+                        <h1>Les trains du monde</h1>
+                        <p>Parlons des trains</p>
+                        <button class="btn">Quiz</button>
                     </div>
                     <div class="col">
-                        <img src="./img/trains.jpg" alt="A train" />
+                        <img src="./img/trains.jpg" alt="Train SNCF" />
                     </div>
                 </div>
             </section>
             <section class="about">
                 <div class="container">
                     <h2>History of trains</h2>
-                    some History
+                    <figure></figure>
                 </div>
             </section>
             <section class="quiz">
                 <div class="container">
                     <h2>Quiz!</h2>
-                    <p>Test your knowledge of trains</p>
-                    <form action="#" class="quiz__form">questions</form>
+                    <p>Testez vos connaissances sur les trains</p>
+                    <form action="#" class="quiz__form">
+                        <div>
+                            <label for="prenom">Prenom</label>
+                            <input
+                                type="text"
+                                name="prenom"
+                                id="prenom"
+                                placeholder="Ton prenom"
+                                required
+                            />
+                        </div>
+                        <div>
+                            <label for="email">Email</label>
+                            <input
+                                type="email"
+                                name="email"
+                                id="email"
+                                placeholder="Ton email"
+                                pattern="^[\w.%+-]+@company\.com$"
+                                required
+                            />
+                        </div>
+                        <div class="questions">
+                            <div>
+                                <p>
+                                    Quel pays possède le train le plus rapide du
+                                    monde ?
+                                </p>
+                                <div class="answers">
+                                    <div>
+                                        <label for="japan">Japon</label>
+                                        <input
+                                            type="radio"
+                                            name="fastest"
+                                            id="japan"
+                                            required
+                                        />
+                                    </div>
+                                    <div>
+                                        <label for="france">France</label>
+                                        <input
+                                            type="radio"
+                                            name="fastest"
+                                            id="france"
+                                            required
+                                        />
+                                    </div>
+                                    <div>
+                                        <label for="china">Chine</label>
+                                        <input
+                                            type="radio"
+                                            name="fastest"
+                                            id="china"
+                                            required
+                                        />
+                                    </div>
+                                    <div>
+                                        <label for="south corea"
+                                            >Corée du Sud</label
+                                        >
+                                        <input
+                                            type="radio"
+                                            name="fastest"
+                                            id="south corea"
+                                            required
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <label for="sncf_year"
+                                    >En quelle année a été créée la SNCF
+                                    ?</label
+                                >
+                                <select name="sncf_year" id="sncf_year">
+                                    <option value="1938">1938</option>
+                                    <option value="1945">1945</option>
+                                    <option value="1024">1024</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="france_year"
+                                    >En quelle année la France a-t-elle battu le
+                                    record de vitesse des trains ?</label
+                                >
+                                <select name="france_year" id="france_year">
+                                    <option value="2015">2015</option>
+                                    <option value="2007">2007</option>
+                                    <option value="2002">2002</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div>
+                            <label for="avis">Ton avis (facultatif)</label>
+                            <textarea
+                                name="avis"
+                                id="avis"
+                                cols="30"
+                                rows="10"
+                                placeholder="J'aime les trains"
+                            ></textarea>
+                        </div>
+                        <button type="submit" class="btn">Done!</button>
+                    </form>
                 </div>
             </section>
             <footer>
@@ -72,6 +175,7 @@
                                     Phone:
                                     <a href="tel:+33783218275">+33783218275</a>
                                 </p>
+                                <address>23 rue trains du monde, 75000</address>
                             </div>
                         </div>
                     </div>

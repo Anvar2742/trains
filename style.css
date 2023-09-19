@@ -70,7 +70,7 @@ h1 {
     margin: 10px 0;
 }
 
-.hero button {
+.btn {
     background: var(--primary-color);
     color: #fff;
     padding: 5px 20px;
@@ -87,4 +87,55 @@ h1 {
 .hero img {
     width: 100%;
     border-radius: 20px;
+}
+
+.quiz {
+    padding: 100px 0;
+}
+
+.quiz .container > p {
+    margin: 15px 0;
+}
+
+textarea {
+    display: block;
+}
+
+form.quiz__form > div {
+    margin: 15px 0;
+}
+
+.questions > div {
+    margin: 15px 0;
+}
+
+.questions > div > p {
+    margin-bottom: 15px;
+}
+
+textarea {
+    display: block;
+}
+
+form.quiz__form > div {
+    margin: 15px 0;
+}
+
+.questions > div {
+    margin: 15px 0;
+}
+
+.questions > div > p {
+    margin-bottom: 15px;
+}
+
+footer .container .footer__top {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer {
+    background: var(--primary-color);
+    padding: 15px 0;
+    color: #fff;
 }
