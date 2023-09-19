@@ -13,7 +13,7 @@
 
 header {
     height: 60px;
-
+    background: #0f0f66;
 }
 
 header .container {
@@ -31,7 +31,7 @@ nav ul {
 }
 
 nav a {
-    color: #333;
+    color: #fff;
     text-decoration: none;
 }
 
