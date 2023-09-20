@@ -46,3 +46,5 @@ resetBtn.addEventListener("click", (e) => {
     reservationResults.innerHTML = "";
     form.reset();
 });
+
+
