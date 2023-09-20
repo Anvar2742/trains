@@ -29,6 +29,12 @@ html {
     margin: 0 auto;
 }
 
+.sncf {
+    max-width: 1140px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
 .thalys {
     max-width: 1140px;
     padding: 0 15px;
@@ -68,6 +74,7 @@ html {
 header {
     height: 60px;
     background: var(--primary-color);
+    
 }
 
 header .container {
@@ -75,11 +82,12 @@ header .container {
     align-items: center;
     justify-content: space-between;
     height: 100%;
+    
 }
 
 nav ul {
     display: flex;
-    gap: 15px;
+    gap: 80px;
     padding-left: 0;
     list-style: none;
 }
@@ -87,6 +95,7 @@ nav ul {
 nav a {
     color: #fff;
     text-decoration: none;
+    
 }
 
 nav a:hover {
@@ -139,31 +148,41 @@ nav a:hover {
     background: var(--add-color);
 }
 
-.hero .thalys {
+ul {
+    margin-top: 15px;
+}
+
+.partners .sncf {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.hero .ouigo {
+.partners .thalys {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.hero .eurostar {
+.partners .ouigo {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.hero .tgv {
+.partners .eurostar {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.hero .trenitalia {
+.partners .tgv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.partners .trenitalia {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -193,9 +212,21 @@ h1 {
     width: 45%;
 }
 
+.partners .col {
+    width: 45%;
+}
+
 section img {
     width: 100%;
     border-radius: 20px;
+}
+
+.reserved {
+    margin-top: 30px;
+    padding: 25px;
+    background-color: #8e8ea5;
+    font-size: large;
+    border-radius: 05%;
 }
 
 .quiz {
@@ -321,3 +352,14 @@ figcaption {
 .reservation__btns .btn:last-child {
     background: transparent;
 }
+
+.concu {
+    gap: 50px;
+    left: 500px;
+    color: #fff;
+    transform: translateX(-50%);
+    z-index: 1;
+    display: flex;
+    width: 50%;
+}
+
