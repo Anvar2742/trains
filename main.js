@@ -44,8 +44,8 @@ resetBtn.addEventListener("click", (e) => {
     e.preventDefault();
     reservationResults.classList.add("hidden");
     reservationResults.innerHTML = "";
+    form.reset();
 });
-
 
 function selectionCompteur() {
     const selectElement = document.getElementById("prestataires");
