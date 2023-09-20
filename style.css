@@ -37,7 +37,7 @@ header .container {
 
 nav ul {
     display: flex;
-    gap: 15px;
+    gap: 80px;
     padding-left: 0;
     list-style: none;
 }
@@ -163,4 +163,11 @@ footer {
 figcaption {
     text-align: center;
     margin-top: 10px;
+}
+
+.concu {
+    position: fixed;
+    gap: 50px;
+    left: 500px;
+    color: #fff;
 }
