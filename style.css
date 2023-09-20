@@ -29,6 +29,12 @@ html {
     margin: 0 auto;
 }
 
+.sncf {
+    max-width: 1140px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
 .thalys {
     max-width: 1140px;
     padding: 0 15px;
@@ -139,31 +145,37 @@ nav a:hover {
     background: var(--add-color);
 }
 
-.hero .thalys {
+.partners .sncf {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.hero .ouigo {
+.partners .thalys {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.hero .eurostar {
+.partners .ouigo {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.hero .tgv {
+.partners .eurostar {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.hero .trenitalia {
+.partners .tgv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.partners .trenitalia {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -190,6 +202,10 @@ h1 {
 }
 
 .hero .col {
+    width: 45%;
+}
+
+.partners .col {
     width: 45%;
 }
 
