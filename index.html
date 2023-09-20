@@ -36,20 +36,21 @@
                     <div class="col">
                         <h1>Let's travel</h1>
                         <p>
-                            Find great deals plane your next traveling adventure
-                            with us!
+                            Find great deals & plan your next traveling
+                            adventure with us!
                         </p>
                     </div>
                     <div class="col">
                         <img src="./img/trains.jpg" alt="Train SNCF" />
                     </div>
-                    <form class="reservation">
+                    <form class="reservation" id="reservation">
                         <div class="reservation__input">
                             <label for="departCity"> From </label>
                             <input
                                 type="text"
                                 id="departCity"
                                 placeholder="From"
+                                required
                             />
                         </div>
                         <div class="reservation__input">
@@ -58,6 +59,7 @@
                                 type="text"
                                 id="arriveCity"
                                 placeholder="To"
+                                required
                             />
                         </div>
                         <div class="reservation__input">
@@ -66,10 +68,15 @@
                                 type="date"
                                 id="departDate"
                                 placeholder="Date of departure"
+                                required
                             />
                         </div>
-                        <button type="submit" class="btn">Search</button>
+                        <div class="reservation__btns">
+                            <button type="submit" class="btn">Search</button>
+                            <a class="btn" id="reset">Reset</a>
+                        </div>
                     </form>
+                    <div class="reservation__results hidden"></div>
                 </div>
             </section>
             <section class="history">
