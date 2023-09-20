@@ -24,3 +24,31 @@ form.addEventListener("submit", (e) => {
 
     console.log(user);
 });
+
+
+function selectionCompteur() {
+
+let selectElement = document.getElementById("prestataires");
+
+let sncfCompteur = 0;
+let ouiGoCompteur = 0;
+let airFranceCompteur = 0;
+
+for (let i = 0; i < selectElement.options.lenght; i++) {
+    let option = selectElement.options[i];
+
+if (option.selected) {
+    if (option.value === "sncf") {
+        sncfCompteur++;
+    } else if (option.value === "ouigo") {
+        ouiGoCompteur++;
+    } else if (option.value === "airfrance") {
+        airFranceCompteur++;
+    }
+}
+}
+
+console.log(sncfCompteur, ouiGoCompteur, airFranceCompteur);
+
+}
+
