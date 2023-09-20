@@ -198,6 +198,14 @@ section img {
     border-radius: 20px;
 }
 
+.reserved {
+    margin-top: 30px;
+    padding: 25px;
+    background-color: #8e8ea5;
+    font-size: large;
+    border-radius: 05%;
+}
+
 .quiz {
     padding: 100px 0;
 }
