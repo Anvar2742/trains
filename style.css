@@ -23,6 +23,42 @@ html {
     margin: 0 auto;
 }
 
+.thalys {
+    max-width: 1140px;
+    padding: 0 15px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.ouigo {
+    max-width: 1140px;
+    padding: 0 15px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.eurostar {
+    max-width: 1140px;
+    padding: 0 15px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.tgv {
+    max-width: 1140px;
+    padding: 0 15px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.trenitalia {
+    max-width: 1140px;
+    padding: 0 15px;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 350px;
+}
+
 header {
     height: 60px;
     background: var(--primary-color);
@@ -66,8 +102,39 @@ nav a:hover {
     align-items: center;
 }
 
+.hero .thalys {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero .ouigo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero .eurostar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero .tgv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero .trenitalia {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 h1 {
     font-size: 48px;
+    margin-bottom: 50px;
 }
 
 .hero p {
