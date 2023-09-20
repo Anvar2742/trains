@@ -145,6 +145,10 @@ nav a:hover {
     background: var(--add-color);
 }
 
+ul {
+    margin-top: 15px;
+}
+
 .partners .sncf {
     display: flex;
     justify-content: space-between;
