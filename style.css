@@ -1,5 +1,7 @@
 :root {
     --primary-color: #0f0f66;
+    --sec-color: #f8ebff;
+    --add-color: #f16e50;
 }
 
 * {
@@ -9,8 +11,12 @@
     font-family: sans-serif;
 }
 
+*:focus {
+    outline: none;
+}
+
 body {
-    background: #f8ebff;
+    background: var(--sec-color);
 }
 
 html {
@@ -21,6 +27,42 @@ html {
     max-width: 1140px;
     padding: 0 15px;
     margin: 0 auto;
+}
+
+.thalys {
+    max-width: 1140px;
+    padding: 0 15px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.ouigo {
+    max-width: 1140px;
+    padding: 0 15px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.eurostar {
+    max-width: 1140px;
+    padding: 0 15px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.tgv {
+    max-width: 1140px;
+    padding: 0 15px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.trenitalia {
+    max-width: 1140px;
+    padding: 0 15px;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 350px;
 }
 
 header {
@@ -65,12 +107,74 @@ nav a:hover {
 
 .hero .container {
     display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.reservation {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: var(--primary-color);
+    color: #fff;
+    padding: 30px;
+    border-radius: 20px;
+    margin: 0 auto;
+    margin-top: 50px;
+    font-size: 20px;
+    -webkit-box-shadow: 0px 0px 24px -8px #000000;
+    box-shadow: 0px 0px 24px -8px #000000;
+}
+
+.reservation input {
+    padding: 5px;
+    border-radius: 10px;
+    border: none;
+    display: block;
+    margin-top: 10px;
+}
+
+.reservation .btn {
+    border: 1px solid #fff;
+    padding: 5px 20px;
+    background: var(--add-color);
+}
+
+.hero .thalys {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero .ouigo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero .eurostar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero .tgv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero .trenitalia {
+    display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 h1 {
     font-size: 48px;
+    margin-bottom: 50px;
 }
 
 .hero p {
@@ -89,12 +193,20 @@ h1 {
 }
 
 .hero .col {
-    width: 50%;
+    width: 45%;
 }
 
 section img {
     width: 100%;
     border-radius: 20px;
+}
+
+.reserved {
+    margin-top: 30px;
+    padding: 25px;
+    background-color: #8e8ea5;
+    font-size: large;
+    border-radius: 05%;
 }
 
 .quiz {
@@ -168,6 +280,59 @@ figcaption {
     margin-top: 10px;
 }
 
+.result__item {
+    background: var(--sec-color);
+    padding: 20px;
+}
+
+.result__dest {
+    display: flex;
+    gap: 5px;
+}
+
+.reservation__results {
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.hidden {
+    display: none;
+}
+
+.result__top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.result__bottom {
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-between;
+}
+
+.reservation__btns {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.reservation__btns .btn {
+    font-size: 16px;
+    text-align: center;
+}
+
+.reservation__btns .btn:last-child {
+    background: transparent;
+}
+
 .concu {
     gap: 50px;
     left: 500px;
@@ -177,3 +342,4 @@ figcaption {
     display: flex;
     width: 50%;
 }
+
