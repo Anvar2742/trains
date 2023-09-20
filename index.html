@@ -34,13 +34,42 @@
             <section class="hero">
                 <div class="container">
                     <div class="col">
-                        <h1>Les trains du monde</h1>
-                        <p>Parlons des trains</p>
-                        <a href="#quiz" class="btn">Quiz</a>
+                        <h1>Let's travel</h1>
+                        <p>
+                            Find great deals plane your next traveling adventure
+                            with us!
+                        </p>
                     </div>
                     <div class="col">
                         <img src="./img/trains.jpg" alt="Train SNCF" />
                     </div>
+                    <form class="reservation">
+                        <div class="reservation__input">
+                            <label for="departCity"> From </label>
+                            <input
+                                type="text"
+                                id="departCity"
+                                placeholder="From"
+                            />
+                        </div>
+                        <div class="reservation__input">
+                            <label for="arriveCity"> To </label>
+                            <input
+                                type="text"
+                                id="arriveCity"
+                                placeholder="To"
+                            />
+                        </div>
+                        <div class="reservation__input">
+                            <label for="departDate"> When? </label>
+                            <input
+                                type="date"
+                                id="departDate"
+                                placeholder="Date of departure"
+                            />
+                        </div>
+                        <button type="submit" class="btn">Search</button>
+                    </form>
                 </div>
             </section>
             <section class="history">
