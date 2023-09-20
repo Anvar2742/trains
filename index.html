@@ -32,6 +32,7 @@
         </header>
         <main>
             <section class="hero">
+                
                 <div class="container">
                     <div class="col">
                         <h1>Let's travel</h1>
@@ -39,6 +40,7 @@
                             Find great deals & plan your next traveling
                             adventure with us!
                         </p>
+                  
                     </div>
                     <div class="col">
                         <img src="./img/trains.jpg" alt="Train SNCF" />
@@ -78,144 +80,110 @@
                     </form>
                     <div class="reservation__results hidden"></div>
                 </div>
-            </section>
-            <section class="history">
-                <div class="container">
+          </section>
+            
+          <section class="partners">
+            <div class="sncf">
                     <div class="col">
-                        <h2>La premiere train du monde</h2>
-                        <p>
-                            La locomotive à vapeur est inventée en 1804 par
-                            Richard Trevithick au Royaume-Uni. La traction à la
-                            vapeur reste le type de traction le plus couramment
-                            utilisé, de la naissance du chemin de fer jusque
-                            dans les années 1950. ​
+
+                      <h1>SNCF</h1>
+                      <p>Thalys est une compagnie ferroviaire qui propose des billets de train entre la France, la Belgique, l'Allemagne ainsi que les Pays-Bas.</p>
+                      <ul>
+                          <li>Plus de 15 000 trains</li>
+                          <li>Plus de 5 millions de passagers transportés chaque jour</li>
+                      </ul>
+
+                  </div>
+                  <div class="col">
+                      <img src="./img/trains.jpg" alt="Train SNCF" />
+                  </div>
+                </div>
+            
+                <div class="thalys">
+                    <div class="col">
+                        <h1>THALYS</h1>
+                        <p>La SNCF (Société nationale des chemins de fer français)est une entreprise ferroviaire française publique qui a été lancée en 1938. Elle propose des billets de train pour voyager en France et en Europe également.</p>
+                        <ul>
+                            <li>Plus de 6 millions de passagers par an</li>
+                            <li>Plus de 800 km de rails</li>
+                        </ul>
+                    </div>
+
+                    <div class="col">
+                        <img src="./img/thalys.jpeg" alt="Train Thalys" />
+                    </div>
+                </div>          
+                <div class="ouigo">
+                    <div class="col">
+                        <h1>OUIGO</h1>
+                        <p>OUIGO est l'offre de TGV low-cost de la SNCF. La compagnie ferroviaire commercialise des billets de train à prix cassés en France.</p>
+                        <ul>
+                            <li>Plus de 5,1 millions de voyageurs en 2016</li>
+                            <li>
+                                Plus d'une vingtaine de destinations desservies en France (Bordeaux, Marseille, Lyon etc.)</li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <img src="./img/ouigo.jpeg" alt="Train OUIGO" />
+                    </div>
+                </div>
+            
+                <div class="eurostar">
+                    <div class="col">
+                        <h1>Eurostar</h1>
+                        <p>Eurostar est une compagnie ferroviaire qui relie directement la France, la Belgique au Royaume-Uni grâce au tunnel sous la manche. Elle a été lancée en 1994. Les billets de train sont à partir de 39€.
                         </p>
+                        <ul>
+                            <li>Plus de 130 millions de voyageurs transportés depuis sa création</li>
+                            <li>Plus de 18 trains par jour</li>
+                        </ul>
                     </div>
                     <div class="col">
-                        <figure>
-                            <img
-                                src="./img/first.jpg"
-                                alt="La locomotive à vapeur"
-                            />
-                            <figcaption>La locomotive à vapeur</figcaption>
-                        </figure>
+                        <img src="./img/eurostar.png" alt="Train eurostar" />
                     </div>
                 </div>
-            </section>
-            <section class="quiz" id="quiz">
-                <div class="container">
-                    <h2>Quiz!</h2>
-                    <p>Testez vos connaissances sur les trains</p>
-                    <form class="quiz__form">
-                        <div>
-                            <label for="prenom">Prenom</label>
-                            <input
-                                type="text"
-                                name="prenom"
-                                id="prenom"
-                                placeholder="Ton prenom"
-                                required
-                            />
-                        </div>
-                        <div>
-                            <label for="email">Email</label>
-                            <input
-                                type="email"
-                                name="email"
-                                id="email"
-                                placeholder="Ton email"
-                                pattern="^[\w.%+-]+@company\.com$"
-                                required
-                            />
-                        </div>
-                        <div class="questions">
-                            <div>
-                                <p>
-                                    Quel pays possède le train le plus rapide du
-                                    monde ?
-                                </p>
-                                <div class="answers">
-                                    <div>
-                                        <label for="japan">Japon</label>
-                                        <input
-                                            type="radio"
-                                            name="fastest"
-                                            id="japan"
-                                            value="Japon"
-                                            required
-                                        />
-                                    </div>
-                                    <div>
-                                        <label for="france">France</label>
-                                        <input
-                                            type="radio"
-                                            name="fastest"
-                                            id="france"
-                                            value="France"
-                                            required
-                                        />
-                                    </div>
-                                    <div>
-                                        <label for="china">Chine</label>
-                                        <input
-                                            type="radio"
-                                            name="fastest"
-                                            id="china"
-                                            value="Chine"
-                                            required
-                                        />
-                                    </div>
-                                    <div>
-                                        <label for="south corea"
-                                            >Corée du Sud</label
-                                        >
-                                        <input
-                                            type="radio"
-                                            name="fastest"
-                                            id="south corea"
-                                            value="Corée du Sud"
-                                            required
-                                        />
-                                    </div>
-                                </div>
-                            </div>
-                            <div>
-                                <label for="sncf_year"
-                                    >En quelle année a été créée la SNCF
-                                    ?</label
-                                >
-                                <select name="sncf_year" id="sncf_year">
-                                    <option value="1938">1938</option>
-                                    <option value="1945">1945</option>
-                                    <option value="1024">1024</option>
-                                </select>
-                            </div>
-                            <div>
-                                <label for="france_year"
-                                    >En quelle année la France a-t-elle battu le
-                                    record de vitesse des trains ?</label
-                                >
-                                <select name="france_year" id="france_year">
-                                    <option value="2015">2015</option>
-                                    <option value="2007">2007</option>
-                                    <option value="2002">2002</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div>
-                            <label for="avis">Ton avis (facultatif)</label>
-                            <textarea
-                                name="avis"
-                                id="avis"
-                                cols="30"
-                                rows="10"
-                                placeholder="J'aime les trains"
-                            ></textarea>
-                        </div>
-                        <button type="submit" class="btn">Done!</button>
-                    </form>
+            
+            
+            
+                <div class="tgv">
+                    <div class="col">
+                        <h1>TGV</h1>
+                        <p>Les TGV (Trains à Grande Vitesse) de la SNCF ont été lancés en 1981. Les TGV relient plus de 250 villes en France.
+                        </p>
+                        <ul>
+                            <li>Plus de 100 millions de pasagers transportés tous les ans</li>
+                            <li>lus de 450 rames</li>
+                        </ul>
+                    </div>
+
+                    <div class="col">
+                        <img src="./img/TGV.jpeg" alt="Train TGV" />
+                    </div>
                 </div>
-            </section>
+            
+            
+            
+                <div class="trenitalia">
+                    <div class="col">
+                        <h1>Trenitalia</h1>
+                        <p>La compagnie de train Trenitalia est la compagnie nationale italienne. Via sa marque Thello, la société propose des connexions quotidiennes entre Milan ou Venise et Paris ou Marseille.
+                        </p>
+                        <ul>
+                            <li>Il est possible de relier Paris - Milan en TGV ou en Thello</li>
+                            <li>Les plus grandes villes d'Italie reliées à grande vitesse</li>
+                            <li>Les trains à grande vitesse sont appelés Frecciarossa</li>
+                        </ul>
+                    </div>
+
+                    <div class="col">
+                        <img src="./img/trenitalia.jpeg" alt="Train Tenitalia" />
+                    </div>
+                </div>
+          </section>
+                
+
+
+
             <footer>
                 <div class="container">
                     <div class="footer__top">
@@ -240,7 +208,7 @@
                                 <address>23 rue trains du monde, 75000</address>
                             </div>
                         </div>
-                    </div>
+                    </div> 
                     <div class="footer__bottom">
                         <nav>
                             <ul>
