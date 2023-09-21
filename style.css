@@ -357,7 +357,7 @@ figcaption {
     gap: 50px;
     left: 500px;
     color: #fff;
-    transform: translateX(-50%);
+   /* transform: translateX(-50%); */
     z-index: 1;
     display: flex;
     width: 50%;
