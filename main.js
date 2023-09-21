@@ -44,4 +44,56 @@ resetBtn.addEventListener("click", (e) => {
     e.preventDefault();
     reservationResults.classList.add("hidden");
     reservationResults.innerHTML = "";
+    form.reset();
+});
+
+function selectionCompteur() {
+    const selectElement = document.getElementById("prestataires");
+
+    let sncfCompteur = 0;
+    let thalysCompteur = 0;
+    let ouiGoCompteur = 0;
+    let eurostarCompteur = 0;
+    let tgvCompteur = 0;
+    let trenitaliaCompteur = 0;
+
+    for (let i = 0; i < selectElement.options.length; i++) {
+        let option = selectElement.options[i];
+
+        if (option.selected) {
+            if (option.value === "sncf") {
+                sncfCompteur++;
+            } else if (option.value === "thalys") {
+                thalysCompteur++;
+            } else if (option.value === "ouigo") {
+                ouiGoCompteur++;
+            } else if (option.value === "eurostar") {
+                eurostarCompteur++;
+            } else if (option.value === "tgv") {
+                tgvCompteur++;
+            } else if (option.value === "trenitalia") {
+                trenitaliaCompteur++;
+            }
+        }
+    }
+
+    return {
+        sncfCompteur: sncfCompteur,
+        thalysCompteur: thalysCompteur,
+        ouiGoCompteur: ouiGoCompteur,
+        eurostarCompteur: eurostarCompteur,
+        tgvCompteur: tgvCompteur,
+        trenitaliaCompteur: trenitaliaCompteur
+    };
+}
+
+const selectElement = document.getElementById("prestataires");
+selectElement.addEventListener("change", function () {
+    const compteur = selectionCompteur();
+    console.log("SNCF choisi " + compteur.sncfCompteur + " fois");
+    console.log("THALYS choisi " + compteur.thalysCompteur + " fois");
+    console.log("OUIGO choisi " + compteur.ouiGoCompteur + " fois");
+    console.log("Eurostar choisi " + compteur.eurostarCompteur + " fois");
+    console.log("TGV choisi " + compteur.tgvCompteur + " fois");
+    console.log("Trenitalia choisi " + compteur.trenitaliaCompteur + " fois");
 });

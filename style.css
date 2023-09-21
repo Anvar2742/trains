@@ -74,6 +74,7 @@ html {
 header {
     height: 60px;
     background: var(--primary-color);
+    
 }
 
 header .container {
@@ -81,11 +82,12 @@ header .container {
     align-items: center;
     justify-content: space-between;
     height: 100%;
+    
 }
 
 nav ul {
     display: flex;
-    gap: 15px;
+    gap: 80px;
     padding-left: 0;
     list-style: none;
 }
@@ -93,6 +95,7 @@ nav ul {
 nav a {
     color: #fff;
     text-decoration: none;
+    
 }
 
 nav a:hover {
@@ -349,3 +352,14 @@ figcaption {
 .reservation__btns .btn:last-child {
     background: transparent;
 }
+
+.concu {
+    gap: 50px;
+    left: 500px;
+    color: #fff;
+    transform: translateX(-50%);
+    z-index: 1;
+    display: flex;
+    width: 50%;
+}
+
