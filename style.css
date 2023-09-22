@@ -283,10 +283,8 @@ footer {
 }
 
 footer nav ul {
-    
-        margin-bottom: 35px;
-        margin-top: -11px;
-    
+    margin-bottom: 35px;
+    margin-top: -11px;
 }
 
 .history figure img {
@@ -450,4 +448,16 @@ textarea {
 
 .modal.active {
     display: block;
+}
+
+.modal p {
+    display: flex;
+    justify-content: center;
+    font-size: large;
+}
+
+.btnCloseModal {
+    background-color: #f77b4e;
+    color: white;
+    border: 1px solid white;
 }
