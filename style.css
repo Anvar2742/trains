@@ -451,3 +451,11 @@ textarea {
 .modal.active {
     display: block;
 }
+
+.boutonScrolling {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    position: absolute;
+    left: 200px;
+}
