@@ -457,7 +457,10 @@ textarea {
     height: 100px;
     display: flex;
     position: fixed;
-    margin-bottom: 50px;
     right: 20px;
     bottom: 20px;
+}
+
+.hover{
+    opacity: 0;
 }

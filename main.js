@@ -138,11 +138,20 @@ let selectedElem = document.getElementById('prestataires');
 
 
 
-
+/*
 
 function scrollingTop(element) {
     let element = document.getElementByClassName("boutonScrolling");
-    element.addEventListener('mouseover', function () {
-        element.setAttribute('src', './img/boutonScrolling2.png')
+    element.addEventListener('mouseover', (event) => {
+        let selectedValue = this.value;
+        scrollingTop(selectedValue)
+    });;
+    
+} */
+
+function scrollingTop(change) {
+    change = document.getElementsByClassName('boutonScrolling');
+    change.addEventListener('mouseover', function (){
+        change.setAttribute('src', './img/boutonScrolling2.png');
     })
 }
