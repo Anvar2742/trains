@@ -121,3 +121,28 @@ btns.forEach((btn) => {
 
 // trouve le button pour fermer le modal
 // C'est juste un button et a cause de ca t'utilise querySelector (pas "all")
+
+
+function scrollTo(className) {
+    let element = document.querySelector('.' + className);
+    if (element) {
+        element.scrollIntoView();
+    }
+}
+
+let selectedElem = document.getElementById('prestataires');
+    selectedElem.addEventListener('change', function () {
+        let selectedValue = this.value;
+        scrollTo(selectedValue.toLowerCase());
+    })
+
+
+
+
+
+function scrollingTop(element) {
+    let element = document.getElementByClassName("boutonScrolling");
+    element.addEventListener('mouseover', function () {
+        element.setAttribute('src', './img/boutonScrolling2.png')
+    })
+}

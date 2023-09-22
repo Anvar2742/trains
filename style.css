@@ -456,6 +456,8 @@ textarea {
     width: 100px;
     height: 100px;
     display: flex;
-    position: absolute;
-    left: 200px;
+    position: fixed;
+    margin-bottom: 50px;
+    right: 20px;
+    bottom: 20px;
 }
