@@ -122,21 +122,18 @@ btns.forEach((btn) => {
 // trouve le button pour fermer le modal
 // C'est juste un button et a cause de ca t'utilise querySelector (pas "all")
 
-
 function scrollTo(className) {
-    let element = document.querySelector('.' + className);
+    let element = document.querySelector("." + className);
     if (element) {
         element.scrollIntoView();
     }
 }
 
-let selectedElem = document.getElementById('prestataires');
-    selectedElem.addEventListener('change', function () {
-        let selectedValue = this.value;
-        scrollTo(selectedValue.toLowerCase());
-    })
-
-
+let selectedElem = document.getElementById("prestataires");
+selectedElem.addEventListener("change", function () {
+    let selectedValue = this.value;
+    scrollTo(selectedValue.toLowerCase());
+});
 
 /*
 
@@ -149,9 +146,38 @@ function scrollingTop(element) {
     
 } */
 
-function scrollingTop(change) {
-    change = document.getElementsByClassName('boutonScrolling');
-    change.addEventListener('mouseover', function (){
-        change.setAttribute('src', './img/boutonScrolling2.png');
-    })
+// function scrollingTop(change) {
+//     change = document.getElementsByClassName("boutonScrolling");
+//     change.addEventListener("mouseover", function () {
+//         change.setAttribute("src", "./img/boutonScrolling2.png");
+//     });
+// }
+
+// Get the button:
+let mybutton = document.querySelector(".boutonScrolling");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function () {
+    scrollFunction();
+};
+
+function scrollFunction() {
+    if (
+        document.body.scrollTop > 20 ||
+        document.documentElement.scrollTop > 20
+    ) {
+        mybutton.style.display = "flex";
+    } else {
+        mybutton.style.display = "none";
+    }
 }
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+
+mybutton.addEventListener("click", () => {
+    topFunction();
+});
