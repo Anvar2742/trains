@@ -418,3 +418,24 @@ textarea {
     margin-top: 20px;
     font-size: 18px;
 }
+
+.modal {
+    display: none;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: auto;
+    bottom: 0;
+    z-index: 9999;
+    max-width: 567px;
+    max-height: 320px;
+    background: var(--primary-color);
+    padding: 20px;
+    color: #fff;
+    border-radius: 20px;
+}
+
+.modal.active {
+    display: block;
+}
