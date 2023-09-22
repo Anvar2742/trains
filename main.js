@@ -122,6 +122,10 @@ const btnCloseModal = document.querySelector(".btnCloseModal");
 // trouve le button pour fermer le modal
 // C'est juste un button et a cause de ca t'utilise querySelector (pas "all")
 
+btnCloseModal.addEventListener("click", () => {
+    modal.classList.remove("active");
+});
+
 function scrollTo(className) {
     let element = document.querySelector("." + className);
     if (element) {
@@ -180,7 +184,4 @@ function topFunction() {
 
 mybutton.addEventListener("click", () => {
     topFunction();
-  
-btnCloseModal.addEventListener("click", () => {
-    modal.classList.remove("active");
 });
