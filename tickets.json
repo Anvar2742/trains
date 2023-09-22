@@ -1,0 +1,23 @@
+[
+    {
+        "from": "Paris",
+        "to": "Lyon",
+        "date": "02/10/2023",
+        "price": 25,
+        "time": 6
+    },
+    {
+        "from": "Nice",
+        "to": "Lyon",
+        "date": "02/10/2023",
+        "price": 15,
+        "time": 6
+    },
+    {
+        "from": "La Rochelle",
+        "to": "Bordeaux",
+        "date": "02/10/2023",
+        "price": 5,
+        "time": 6
+    }
+]
