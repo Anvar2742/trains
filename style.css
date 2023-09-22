@@ -450,6 +450,39 @@ textarea {
     display: block;
 }
 
+.boutonScrolling {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    background: var(--primary-color);
+    padding: 20px;
+    border-radius: 50%;
+    border: none;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.boutonScrolling img {
+    width: 100%;
+    transition: 0.2s;
+    filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(200deg)
+        brightness(103%) contrast(101%);
+}
+
+.hover {
+    transform: translateX(30px);
+}
+
+.boutonScrolling:hover img {
+    transform: translateX(-100px);
+}
+
+.boutonScrolling:hover img.hover {
+    transform: translateX(-60px);
+}
 .modal p {
     display: flex;
     justify-content: center;
