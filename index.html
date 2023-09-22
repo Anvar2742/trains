@@ -13,18 +13,19 @@
                     <img src="./img/train-svgrepo-com.svg" alt="Trains Logo" />
                 </a>
                 <span class="concu">
+                    <label for="préstataires disponibles :"
+                        >Préstataires disponibles :
+                    </label>
+                    <select id="prestataires" name="prestataire" required>
+                        <option value="SNCF">SNCF</option>
+                        <option value="THALYS">THALYS</option>
+                        <option value="OUIGO">OUIGO</option>
+                        <option value="Eurostar">Eurostar</option>
+                        <option value="TGV">TGV</option>
+                        <option value="Trenitalia">Trenitalia</option>
+                    </select>
+                </span>
                 <nav>
-                    
-                    <label for="préstataires disponibles :">Préstataires disponibles : </label>
-            <select id="prestataires" name="prestataire" required>
-                <option value="SNCF">SNCF</option>
-                <option value="THALYS">THALYS</option>
-                <option value="OUIGO">OUIGO</option>
-                <option value="Eurostar">Eurostar</option>
-                <option value="TGV">TGV</option>
-                <option value="Trenitalia">Trenitalia</option>
-            </select>
-            </span>
                     <ul>
                         <li>
                             <a href="#">Home</a>
@@ -44,19 +45,19 @@
         </header>
         <main>
             <section class="hero">
-                
                 <div class="container">
                     <div class="col">
-
                         <h1>Let's travel</h1>
                         <p>
                             Find great deals & plan your next traveling
                             adventure with us!
                         </p>
-                  
                     </div>
                     <div class="col">
-                        <img src="./img/voyage.jpeg" alt="Femme qui prend le train" />
+                        <img
+                            src="./img/voyage.jpeg"
+                            alt="Femme qui prend le train"
+                        />
                     </div>
                     <form class="reservation" id="reservation">
                         <div class="reservation__input">
@@ -87,30 +88,35 @@
                             />
                         </div>
                         <div class="reservation__btns">
-                            <button type="submit" class="btn">Search</button>
-                            <a class="btn" id="reset">Reset</a>
+                            <button type="submit" class="btn btn-sec">
+                                Search
+                            </button>
+                            <a class="btn btn-sec btn-border" id="reset"
+                                >Reset</a
+                            >
                         </div>
                     </form>
                     <div class="reservation__results hidden"></div>
                 </div>
-          </section>
+            </section>
             
-          <section class="partners">
+            <section class="partners">
             <div class="sncf">
                     <div class="col">
 
-                      <h2>SNCF</h2>
-                      <p>La SNCF (Société nationale des chemins de fer français)est une entreprise ferroviaire française publique qui a été lancée en 1938. Elle propose des billets de train pour voyager en France et en Europe également.</p>
-                      <ul>
-                          <li>Plus de 15 000 trains</li>
-                          <li>Plus de 5 millions de passagers transportés chaque jour</li>
-                      </ul>
-                      <input class="reserved" type="button" value="Réserver un trajet" />
+                    <h2>SNCF</h2>
+                        <p>La SNCF (Société nationale des chemins de fer français)est une entreprise ferroviaire française publique qui a été lancée en 1938. Elle propose des billets de train pour voyager en France et en Europe également.</p>
+                        <ul>
+                            <li>Plus de 15 000 trains</li>
+                            <li>Plus de 5 millions de passagers transportés chaque jour</li>
+                        </ul>
+                        <input class="reserved" type="button" value="Réserver un trajet" />
+                        
 
-                  </div>
-                  <div class="col">
-                      <img src="./img/trains.jpg" alt="Train SNCF" />
-                  </div>
+                </div>
+                    <div class="col">
+                        <img src="./img/trains.jpg" alt="Train SNCF" />
+                    </div>
                 </div>
             
                 <div class="thalys">
@@ -174,34 +180,92 @@
                         <input class="reserved" type="button" value="Réserver un trajet" />
                     </div>
 
-                    <div class="col">
-                        <img src="./img/TGV.jpeg" alt="Train TGV" />
+                        <div class="col">
+                            <img src="./img/TGV.jpeg" alt="Train TGV" />
+                        </div>
+                    </div>
+
+                    <div class="trenitalia">
+                        <div class="col">
+                            <h2>Trenitalia</h2>
+                            <p>
+                                La compagnie de train Trenitalia est la
+                                compagnie nationale italienne. Via sa marque
+                                Thello, la société propose des connexions
+                                quotidiennes entre Milan ou Venise et Paris ou
+                                Marseille.
+                            </p>
+                            <ul>
+                                <li>
+                                    Il est possible de relier Paris - Milan en
+                                    TGV ou en Thello
+                                </li>
+                                <li>
+                                    Les plus grandes villes d'Italie reliées à
+                                    grande vitesse
+                                </li>
+                                <li>
+                                    Les trains à grande vitesse sont appelés
+                                    Frecciarossa
+                                </li>
+                            </ul>
+                            <input
+                                class="reserved"
+                                type="button"
+                                value="Réserver un trajet"
+                            />
+                        </div>
+
+                        <div class="col">
+                            <img
+                                src="./img/trenitalia.jpeg"
+                                alt="Train Tenitalia"
+                            />
+                        </div>
                     </div>
                 </div>
-            
-            
-            
-                <div class="trenitalia">
-                    <div class="col">
-                        <h2>Trenitalia</h2>
-                        <p>La compagnie de train Trenitalia est la compagnie nationale italienne. Via sa marque Thello, la société propose des connexions quotidiennes entre Milan ou Venise et Paris ou Marseille.
-                        </p>
-                        <ul>
-                            <li>Il est possible de relier Paris - Milan en TGV ou en Thello</li>
-                            <li>Les plus grandes villes d'Italie reliées à grande vitesse</li>
-                            <li>Les trains à grande vitesse sont appelés Frecciarossa</li>
-                        </ul>
-                        <input class="reserved" type="button" value="Réserver un trajet" />
-                    </div>
+            </section>
 
-                    <div class="col">
-                        <img src="./img/trenitalia.jpeg" alt="Train Tenitalia" />
+            <section class="contact">
+                <div class="container">
+                    <div class="form__wrap">
+                        <h2>Ecrivez nous</h2>
+                        <form class="contact__form">
+                            <div class="form__row">
+                                <div class="form__input">
+                                    <label for="name"> Prenom </label>
+                                    <input
+                                        type="text"
+                                        placeholder="Lois"
+                                        id="email"
+                                    />
+                                </div>
+                                <div class="form__input">
+                                    <label for="email"> Email </label>
+                                    <input
+                                        type="email"
+                                        placeholder="lois@example.com"
+                                        id="email"
+                                    />
+                                </div>
+                            </div>
+                            <div class="form__input">
+                                <label for="message"> Message </label>
+                                <textarea
+                                    name="message"
+                                    id="message"
+                                    cols="30"
+                                    rows="10"
+                                    placeholder="J'adore votre service!"
+                                ></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-sec">
+                                Envoyer
+                            </button>
+                        </form>
                     </div>
                 </div>
-          </section>
-                
-
-
+            </section>
 
             <footer>
                 <div class="container">
@@ -227,7 +291,7 @@
                                 <address>23 rue trains du monde, 75000</address>
                             </div>
                         </div>
-                    </div> 
+                    </div>
                     <div class="footer__bottom">
                         <nav>
                             <ul>
@@ -248,5 +312,15 @@
             </footer>
         </main>
     </body>
+
+
+    <div class="modal">
+        <button class="btnCloseModal">Fermer</button>
+        <h1>Trajet réservé</h1>
+        <p>Merci de nous avoir choisi nous vous souhaitons un bon voyage</p>
+        <br>
+        <p>A bientôt!</p>
+    </div>
+
     <script src="./main.js" type="module"></script>
 </html>

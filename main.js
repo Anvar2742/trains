@@ -83,7 +83,7 @@ function selectionCompteur() {
         ouiGoCompteur: ouiGoCompteur,
         eurostarCompteur: eurostarCompteur,
         tgvCompteur: tgvCompteur,
-        trenitaliaCompteur: trenitaliaCompteur
+        trenitaliaCompteur: trenitaliaCompteur,
     };
 }
 
@@ -97,3 +97,29 @@ selectElement.addEventListener("change", function () {
     console.log("TGV choisi " + compteur.tgvCompteur + " fois");
     console.log("Trenitalia choisi " + compteur.trenitaliaCompteur + " fois");
 });
+
+/**
+ * Modal functionality
+ * Lenny
+ */
+
+// Trouve le modal
+const modal = document.querySelector(".modal");
+// Trouve tout les butons de reservation
+// Je vois que c'est pas un button, mais quand meme on a le class 'reserver'
+const btns = document.querySelectorAll(".reserved");
+
+// pour chaque button ajoute un evenement
+btns.forEach((btn) => {
+    // Quand on click faire qq chose
+    btn.addEventListener("click", () => {
+        // ajoute class "active" sur modal
+        console.log("cool");
+        modal.classList.add("active");
+    });
+
+});
+
+const btnCloseModal = document.querySelector(".btn__close")
+// trouve le button pour fermer le modal
+// C'est juste un button et a cause de ca t'utilise querySelector (pas "all")
