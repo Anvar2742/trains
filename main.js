@@ -114,11 +114,11 @@ btns.forEach((btn) => {
     // Quand on click faire qq chose
     btn.addEventListener("click", () => {
         // ajoute class "active" sur modal
-        console.log("cool");
         modal.classList.add("active");
     });
 });
 
+const btnCloseModal = document.querySelector(".btnCloseModal");
 // trouve le button pour fermer le modal
 // C'est juste un button et a cause de ca t'utilise querySelector (pas "all")
 
@@ -180,4 +180,7 @@ function topFunction() {
 
 mybutton.addEventListener("click", () => {
     topFunction();
+  
+btnCloseModal.addEventListener("click", () => {
+    modal.classList.remove("active");
 });
